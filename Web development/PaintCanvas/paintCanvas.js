@@ -16,7 +16,6 @@ function setHeight (value) {
     //let value= document.getElementById("width");
    if(isNumeric(value)===true){
      paintcanvas.height=value
-     
    }
    }
 function clearCanvas () {
