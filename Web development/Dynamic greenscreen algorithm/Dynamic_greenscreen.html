@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<head>
+    <title>Green Screen convertor</title>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <style>
+        canvas{
+            width: 400px;
+            height:400px;
+            border:1px solid grey;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Green Screen Convertor</h1>
+    <canvas id="can1"></canvas>
+    <canvas id="can2"></canvas>
+    <p><input type="file" id="fgImage" multiple="false" accept="image/*" value="Foreground Image" onchange="loadForegroundImage()"/>
+       <input type="file" id="bgImage" multiple="false" accept="image/*" value="Background Image" onchange="loadBackgroundImage()"/></p>
+       <input type="button" id="composite" value="Create Composite" onclick="doGreenScreen()"/> 
+       <input type="button" id="clear" value="Clear Canvas" onclick="clearCanvas()"/>
+    <script src="./Dynamic_greenscreen.js"></script>
+</body>
+</html>
