@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Image Filters</title>
+    <Style>
+        canvas {
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        body {
+            background-color: lightpink;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color:red;
+            margin: auto;
+        }
+        h1{
+            color: white;
+            margin: auto;
+        }
+        .blur{
+            filter: blur(1px);
+        }
+    </Style>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+
+<body>
+    <h1>Filter Fun</h1>
+    <canvas id="can"></canvas>
+    <Script src="Filter_Mini_project.js"></Script>
+    <h2>Load Image:
+        <input type="file" id="imageFile" multiple="false" accept="image/*" onchange="loadImage()"/></h2>
+        <h2>Choose filter</h2>
+        <p><input type="button" id="greyFilter" value="Greyscale" onclick="greyScaleFilter()"/>
+            <input type="button" id="redFilter" value="Red" onclick="redFilter()"/>
+            <input type="button" id="windowFilter" value="window" onclick="WindowFilter()"/>
+            <input type="button" id="rainbowFilter" value="Rainbow" onclick="rainbowFilter()"/>
+            <input type="button" id="blurFilter" value="blur" onclick="blurFilter()"/>
+        </p>
+        <input type="button" id="clearFilter" value="Clear filter" onclick="clearFilter()"/>
+</body>
+
+</html>
